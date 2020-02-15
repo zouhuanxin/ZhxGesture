@@ -1,5 +1,5 @@
 # ZhxGesture
-一个手势库，帮助用户不需要再去写频繁的手势算法，支持放大，缩小，上滑，下滑，左滑，右滑。用户只需要去监听自己想要监听的手指即可，和监听单击事件一样方便。
+一个手势库，帮助用户不需要再去写频繁的手势算法，支持放大，缩小，上滑，下滑，左滑，右滑。用户只需要去监听自己想要监听的手指即可，和监听单击事件一样方便。并且手势库支持上下滑动的一个惯性摩擦滑动回调，你也只需要去相应方法中获取即可。
 
 ### 库引入
 Step 1. Add the JitPack repository to your build file 
@@ -15,7 +15,7 @@ allprojects {
 Step 2. Add the dependency
 ```
 dependencies {
-	        implementation 'com.github.zouhuanxin:ZhxGesture:1.0'
+	        implementation 'com.github.zouhuanxin:ZhxGesture:1.1'
 	}
 ```
 
@@ -103,7 +103,7 @@ up中返回了一个摩擦因数 意思是 惯性滚动距离值 这个回调会
             }
 
             @Override
-            public void Inertia(int value) {
+            public void Inertia(double value) {
 
             }
         });
